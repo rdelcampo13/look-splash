@@ -126,9 +126,38 @@ class App extends Component {
         <div className="header">
           <canvas className='connecting-dots'>
           </canvas>
-          <div className="header-container">
+          <div className="header-container text-center">
             <h1 className="header-title text-center">Look<span className="header-title-ar">ar</span></h1>
             <h2 className="header-subtitle text-center">We're turning aumented reality into a scientific insturment</h2>
+
+
+              {/* <!-- Button trigger modal --> */}
+              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalCenter">
+                Sign up for updates
+              </button>
+
+              {/* <!-- Modal --> */}
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
           </div>
         </div>
       </div>
