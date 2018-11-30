@@ -13,7 +13,6 @@ class App extends Component {
     this.setState({
       [name]: value
     });
-    console.log(this.state)    
   };
 
   canvasDots() {
@@ -119,13 +118,7 @@ class App extends Component {
     setInterval(createDots, 1000/30);
   };
 
-  log = () => {
-    console.log(this.state)
-  }
-
-
   componentDidMount() {         
-    this.log()
     this.canvasDots();
   }
 
