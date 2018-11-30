@@ -153,7 +153,7 @@ class App extends Component {
                     </button>
                   </div>
                   <div className="modal-body">
-
+                  <img className="message" src="/img/message.png" />
                   {/* <!-- Begin Mailchimp Signup Form --> */}
                   <div id="mc_embed_signup">
                     <form action="https://app.us19.list-manage.com/subscribe/post?u=93f8f62161d6fac936d34784e&amp;id=0fc8d63267" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
