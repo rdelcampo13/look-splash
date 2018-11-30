@@ -5,7 +5,15 @@ import Navbar from "../../components/Navbar";
 class App extends Component {
 
   state = {
+    EMAIL: '',
+  };
 
+  handleInputChange = event => {
+    const { name, value } = event.target;
+    this.setState({
+      [name]: value
+    });
+    console.log(this.state)    
   };
 
   canvasDots() {
@@ -111,9 +119,13 @@ class App extends Component {
     setInterval(createDots, 1000/30);
   };
 
+  log = () => {
+    console.log(this.state)
+  }
+
 
   componentDidMount() {         
-
+    this.log()
     this.canvasDots();
   }
 
@@ -127,39 +139,61 @@ class App extends Component {
           <canvas className='connecting-dots'>
           </canvas>
           <div className="header-container text-center">
-            <h1 className="header-title text-center">Look<span className="header-title-ar">ar</span></h1>
-            <h2 className="header-subtitle text-center">We're turning aumented reality into a scientific insturment</h2>
+            <h1 className="header-title">Look<span className="header-title-ar">ar</span></h1>
+            <h3 className="header-subtitle">We're turning augmented reality into a scientific tool</h3>
 
-
-              {/* <!-- Button trigger modal --> */}
-              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalCenter">
-                Sign up for updates
-              </button>
-
-              {/* <!-- Modal --> */}
-              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      ...
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
+            {/* <!-- Button trigger modal --> */}
+            <button type="button" className="btn btn-look" data-toggle="modal" data-target="#mc-modal">
+              Sign up for updates
+            </button>
           </div>
         </div>
+
+            {/* <!-- Modal --> */}
+            <div className="modal fade" id="mc-modal" tabIndex="-1" role="dialog">
+              <div className="modal-dialog modal-dialog-centered" role="document">
+                <div className="modal-content">
+                  <div className="modal-header">
+                    <h5 className="modal-title" id="exampleModalCenterTitle">Sign up for our mailing list</h5>
+                    <button type="button" className="close" data-dismiss="modal">
+                      <span>&times;</span>
+                    </button>
+                  </div>
+                  <div className="modal-body">
+
+                  {/* <!-- Begin Mailchimp Signup Form --> */}
+                  <div id="mc_embed_signup">
+                    <form action="https://app.us19.list-manage.com/subscribe/post?u=93f8f62161d6fac936d34784e&amp;id=0fc8d63267" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
+                      <div id="mc_embed_signup_scroll">
+                      <p style={{ fontSize: 14 }}>Enter your email address to get updates on the project</p>
+                        <div className="mc-field-group">
+                          <input type="email" defaultValue="" placeholder="Your Email" name="EMAIL" className="required email" id="mce-EMAIL"  onChange={this.handleInputChange} />
+                        </div>
+                        <div id="mce-responses" className="clear">
+                          <div className="response" id="mce-error-response" style={{ display: "none" }}></div>
+                          <div className="response" id="mce-success-response" style={{ display: "none" }}></div>
+                        </div>    
+                        {/* <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> */}
+                        <div style={{ position: "absolute", left: -5000 }}>
+                          <input type="text" name="b_93f8f62161d6fac936d34784e_0fc8d63267" tabIndex="-1" defaultValue="" />
+                        </div>
+                        <div className="clear">
+                          <input disabled={!this.state.EMAIL} type="submit" defaultValue="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="btn btn-look" />
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  {/* <!--End mc_embed_signup--> */}
+
+                  </div>
+                  {/* <div className="modal-footer">
+                    <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" className="btn btn-primary">Save changes</button>
+                  </div> */}
+                </div>
+              </div>
+            </div>
+
       </div>
     );
   }
