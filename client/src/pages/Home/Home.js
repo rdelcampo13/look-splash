@@ -132,7 +132,7 @@ class App extends Component {
           <canvas className='connecting-dots'>
           </canvas>
           <div className="header-container text-center">
-            <h1 className="header-title">Look<span className="header-title-ar">ar</span></h1>
+            <h1 className="header-title">Look{/* <span className="header-title-ar">ar</span> */}</h1>
             <h3 className="header-subtitle">We're turning augmented reality into a scientific tool</h3>
 
             {/* <!-- Button trigger modal --> */}
