@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Home.css';
-import Navbar from "../../components/Navbar";
+// import Navbar from "../../components/Navbar";
 
 class App extends Component {
 
@@ -33,7 +33,7 @@ class App extends Component {
     };
 
     var dots = {
-        nb: 90,
+        nb: ((window.innerWidth > 900) ? 90 : 20),
         distance: 90,
         d_radius: 100,
         array: []
