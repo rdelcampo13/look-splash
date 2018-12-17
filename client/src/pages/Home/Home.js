@@ -263,23 +263,23 @@ class App extends Component {
               <div className="row">
                 <div className="col-lg gif top-left">
                   <h3 className="gif-header gif-header-top text-center" style={{ color: "#fff", fontFamily: "Montserrat" }}>Pick Your Tool</h3>
-                  <img src="/img/fade1.gif" />
+                  <img src="/img/clip1.gif" />
                 </div>
                 <div className="col-lg gif top-right">
                   <h3 className="gif-header gif-header-top text-center" style={{ color: "#fff", fontFamily: "Montserrat" }}>Place on Target</h3>
-                  <img src="/img/fade2.gif" />
+                  <img src="/img/clip2.gif" />
                 </div>
               </div>        
 
               <div className="row">
                 <div className="col-lg gif bottom-left">
                   <h3 className="gif-header gif-header-top gif-header-mobile text-center" style={{ color: "#fff", fontFamily: "Montserrat" }}>Scan Target</h3>
-                  <img src="/img/fade3.gif" />
+                  <img src="/img/clip3.gif" />
                   <h3 className="gif-header gif-header-bottom text-center" style={{ color: "#fff", fontFamily: "Montserrat" }}>Scan Target</h3>
                 </div>
                 <div className="col-lg gif bottom-right">
                   <h3 className="gif-header gif-header-top gif-header-mobile text-center" style={{ color: "#fff", fontFamily: "Montserrat" }}>Analyze Results</h3>
-                  <img src="/img/fade4.gif" />
+                  <img src="/img/clip4.gif" />
                   <h3 className="gif-header gif-header-bottom text-center" style={{ color: "#fff", fontFamily: "Montserrat" }}>Analyze Results</h3>
                 </div>
               </div>    
