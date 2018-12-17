@@ -262,7 +262,7 @@ class App extends Component {
 
               <div className="row">
                 <div className="col-lg gif top-left">
-                  <h3 className="gif-header gif-header-top text-center" style={{ color: "#fff", fontFamily: "Montserrat" }}>Pick Your Tool</h3>
+                  <h3 className="gif-header gif-header-top text-center" style={{ color: "#fff", fontFamily: "Montserrat" }}>Make Your Tool</h3>
                   <img src="/img/clip1.gif" />
                 </div>
                 <div className="col-lg gif top-right">
