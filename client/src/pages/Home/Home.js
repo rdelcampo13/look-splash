@@ -196,7 +196,7 @@ class App extends Component {
                       <a className="nav-link" target="_blank" href="https://vimeo.com/lookscience">Demo</a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="/docs/Look_Whitepaper.pdf" target="_Blank">Whitepaper</a>
+                      <a className="nav-link" href="/docs/Look_Whitepaper_v1.1.pdf" target="_Blank">Whitepaper</a>
                     </li>
                     <li className="nav-item">
                       <a className="nav-link" href="#" data-toggle="modal" data-target="#mc-modal" >Contact</a>
@@ -241,7 +241,7 @@ class App extends Component {
                       <a className="nav-link" target="_blank" href="https://vimeo.com/lookscience">Demo</a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="/docs/Look_Whitepaper.pdf" target="_Blank">Whitepaper</a>
+                      <a className="nav-link" href="/docs/Look_Whitepaper_v1.1.pdf" target="_Blank">Whitepaper</a>
                     </li>
                     <li className="nav-item">
                       <a className="nav-link" href="#" data-toggle="modal" data-target="#mc-modal" >Contact</a>
@@ -263,23 +263,23 @@ class App extends Component {
               <div className="row">
                 <div className="col-lg gif top-left">
                   <h3 className="gif-header gif-header-top text-center" style={{ color: "#fff", fontFamily: "Montserrat" }}>Make Your Tool</h3>
-                  <img src="/img/clip1.gif" />
+                  <img src="/img/gif1_new.gif" />
                 </div>
                 <div className="col-lg gif top-right">
                   <h3 className="gif-header gif-header-top text-center" style={{ color: "#fff", fontFamily: "Montserrat" }}>Place on Target</h3>
-                  <img src="/img/clip2.gif" />
+                  <img src="/img/gif2_new.gif" />
                 </div>
               </div>        
 
               <div className="row">
                 <div className="col-lg gif bottom-left">
                   <h3 className="gif-header gif-header-top gif-header-mobile text-center" style={{ color: "#fff", fontFamily: "Montserrat" }}>Scan Target</h3>
-                  <img src="/img/clip3.gif" />
+                  <img src="/img/gif3_new.gif" />
                   <h3 className="gif-header gif-header-bottom text-center" style={{ color: "#fff", fontFamily: "Montserrat" }}>Scan Target</h3>
                 </div>
                 <div className="col-lg gif bottom-right">
                   <h3 className="gif-header gif-header-top gif-header-mobile text-center" style={{ color: "#fff", fontFamily: "Montserrat" }}>Analyze Results</h3>
-                  <img src="/img/clip4.gif" />
+                  <img src="/img/gif4_new.gif" />
                   <h3 className="gif-header gif-header-bottom text-center" style={{ color: "#fff", fontFamily: "Montserrat" }}>Analyze Results</h3>
                 </div>
               </div>    
